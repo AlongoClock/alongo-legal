@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alongo Privacy Policy</title>
+  <meta name="description" content="Learn how Alongo collects, uses, and protects your information. Alongo is a couples' alarm app that lets you wake each other up with voice messages.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://alongo.app/privacy">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alongo Privacy Policy">
+  <meta property="og:description" content="Learn how Alongo collects, uses, and protects your information.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alongo.app/privacy">
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #FAFAFA;
+      --surface: #FFFFFF;
+      --text: #1A1A2E;
+      --text-secondary: #555;
+      --text-muted: #888;
+      --accent: #E8A87C;
+      --accent-light: #F2C6A0;
+      --border: #EAEAEA;
+      --code-bg: #F5F5F5;
+      --radius: 12px;
+      --max-width: 720px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Helvetica Neue", "Noto Sans SC", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header ───────────────────────────── */
+    .header {
+      background: linear-gradient(135deg, #0F172A 0%, #1B2436 50%, #2A3145 100%);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    .header-logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: -0.5px;
+    }
+
+    .header-logo span {
+      background: linear-gradient(135deg, var(--accent-light), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header-subtitle {
+      margin-top: 8px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 400;
+    }
+
+    .header-date {
+      margin-top: 16px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* ── Content ──────────────────────────── */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 36px;
+    }
+
+    .intro p {
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+
+    .intro p + p {
+      margin-top: 12px;
+    }
+
+    .intro strong {
+      color: var(--text);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent-light);
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      color: var(--text-secondary);
+      padding: 6px 0 6px 24px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 16px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #d4956a;
+      text-decoration: underline;
+    }
+
+    /* ── Permissions Table ────────────────── */
+    .perm-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .perm-table th {
+      text-align: left;
+      padding: 10px 14px;
+      background: var(--code-bg);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .perm-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+
+    .perm-table td:first-child {
+      color: var(--text);
+      font-weight: 500;
+      white-space: nowrap;
+      font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+      font-size: 13px;
+    }
+
+    .perm-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .perm-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    /* ── What We Don't Collect Card ────────── */
+    .no-collect {
+      margin-top: 24px;
+      padding: 16px 18px;
+      background: #F0FAF0;
+      border: 1px solid #D4EDD4;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #2D5A2D;
+    }
+
+    .no-collect p {
+      color: #2D5A2D;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .no-collect ul {
+      margin-top: 4px;
+    }
+
+    .no-collect ul li {
+      color: #2D5A2D;
+      padding: 3px 0 3px 20px;
+      font-size: 14px;
+    }
+
+    .no-collect ul li::before {
+      background: #5CB85C;
+      top: 14px;
+    }
+
+    /* ── Third-party Card ─────────────────── */
+    .third-party {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+    }
+
+    .third-party ul li::before {
+      background: #4A90D9;
+    }
+
+    .not-used {
+      margin-top: 16px;
+      padding: 16px 18px;
+      background: #F0FAF0;
+      border: 1px solid #D4EDD4;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #2D5A2D;
+    }
+
+    .not-used p {
+      color: #2D5A2D;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .not-used ul {
+      margin-top: 4px;
+    }
+
+    .not-used ul li {
+      color: #2D5A2D;
+      padding: 3px 0 3px 20px;
+      font-size: 14px;
+    }
+
+    .not-used ul li::before {
+      background: #5CB85C;
+      top: 14px;
+    }
+
+    /* ── Notice Box (generic) ─────────────── */
+    .notice-box {
+      margin-top: 16px;
+      padding: 14px 18px;
+      background: #FFF8F0;
+      border: 1px solid #F0D8B0;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #8B6914;
+    }
+
+    .notice-box p {
+      color: #8B6914;
+      margin-bottom: 4px;
+    }
+
+    /* ── Contact Card ─────────────────────── */
+    .contact-card {
+      background: linear-gradient(135deg, #0F172A 0%, #1B2436 100%);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      text-align: center;
+    }
+
+    .contact-card h2 {
+      color: #FFFFFF;
+      border-bottom-color: var(--accent);
+    }
+
+    .contact-card p {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .contact-response {
+      margin-top: 8px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.45%);
+    }
+
+    .contact-email {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 28px;
+      background: linear-gradient(135deg, var(--accent-light), var(--accent));
+      color: #1A1A2E;
+      font-weight: 600;
+      border-radius: 24px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .contact-email:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(232, 168, 124, 0.4);
+      text-decoration: none;
+    }
+
+    /* ── Contact Label ────────────────────── */
+    .contact-label {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    /* ── Footer ───────────────────────────── */
+    .footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .footer a {
+      font-size: 13px;
+      color: var(--accent);
+    }
+
+    /* ── Responsive ───────────────────────── */
+    @media (max-width: 480px) {
+      .header {
+        padding: 36px 20px 28px;
+      }
+
+      .header-logo {
+        font-size: 24px;
+      }
+
+      .container {
+        padding: 28px 16px 60px;
+      }
+
+      .intro,
+      .third-party {
+        padding: 20px 18px;
+      }
+
+      .perm-table {
+        font-size: 13px;
+      }
+
+      .perm-table td:first-child {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════ Header ══════════════ -->
+  <header class="header">
+    <div class="header-logo">Alongo</div>
+    <div class="header-subtitle">Privacy Policy</div>
+    <div class="header-date">Last updated: July 5, 2026</div>
+  </header>
+
+  <!-- ══════════════ Content ══════════════ -->
+  <main class="container">
+
+    <!-- ── Intro ───────────────────────────── -->
+    <div class="intro">
+      <p>
+        Alongo is a couples' alarm app that lets you wake each other up with voice messages.
+        This privacy policy explains what data we collect, why we collect it, and how you can control it.
+      </p>
+      <p>
+        <strong>We do not require your email address, phone number, or real name to use Alongo.</strong>
+      </p>
+    </div>
+
+    <!-- ── 1. Information We Collect ────────── -->
+    <section id="information">
+      <h2>1. Information We Collect</h2>
+
+      <h3>Account Information</h3>
+      <p>
+        We use anonymous authentication to create a unique account identifier.
+        No email, phone number, or personal identity is required.
+      </p>
+
+      <h3>Data We Store</h3>
+      <ul>
+        <li>Anonymous account identifier</li>
+        <li>Display name (a randomly generated nickname you can customize)</li>
+        <li>Pair relationship information (including your paired user's anonymous identifier)</li>
+        <li>Voice messages (securely stored in Cloud Firestore for delivery between paired users)</li>
+        <li>Account creation and activity timestamps</li>
+      </ul>
+
+      <h3>What We Do Not Collect</h3>
+      <div class="no-collect">
+        <p>Alongo does not collect or access:</p>
+        <ul>
+          <li>Your contacts or address book</li>
+          <li>Your photos or media files</li>
+          <li>Your precise or approximate location</li>
+          <li>Your SMS messages</li>
+        </ul>
+      </div>
+
+      <h3>Device Permissions</h3>
+      <p>The following permissions are used by Alongo:</p>
+
+      <div class="perm-table-wrap">
+        <table class="perm-table">
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Microphone<br><small>(RECORD_AUDIO)</small></td>
+              <td>Record voice messages only when you choose to send one.</td>
+            </tr>
+            <tr>
+              <td>Notifications<br><small>(POST_NOTIFICATIONS)</small></td>
+              <td>Deliver alarm notifications.</td>
+            </tr>
+            <tr>
+              <td>Full Screen Intent<br><small>(USE_FULL_SCREEN_INTENT)</small></td>
+              <td>Display the alarm screen while ringing.</td>
+            </tr>
+            <tr>
+              <td>Exact Alarm<br><small>(SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM)</small></td>
+              <td>Wake you at the scheduled time.</td>
+            </tr>
+            <tr>
+              <td>Boot Completed<br><small>(RECEIVE_BOOT_COMPLETED)</small></td>
+              <td>Restore alarms after device restart.</td>
+            </tr>
+            <tr>
+              <td>Vibrate<br><small>(VIBRATE)</small></td>
+              <td>Vibrate during alarms.</td>
+            </tr>
+            <tr>
+              <td>Wake Lock<br><small>(WAKE_LOCK)</small></td>
+              <td>Keep the device awake while an alarm is ringing.</td>
+            </tr>
+            <tr>
+              <td>Foreground Service<br><small>(FOREGROUND_SERVICE + FOREGROUND_SERVICE_SPECIAL_USE)</small></td>
+              <td>Run the alarm ringing service.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ── 2. How We Use Your Information ──── -->
+    <section id="how-we-use">
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>To create and maintain your anonymous account</li>
+        <li>To pair your account with your partner's account</li>
+        <li>To send and receive voice messages as alarm sounds</li>
+        <li>To schedule and deliver alarms at exact times</li>
+        <li>To restore alarms after device reboots</li>
+      </ul>
+    </section>
+
+    <!-- ── 3. Data Retention ───────────────── -->
+    <section id="retention">
+      <h2>3. Data Retention</h2>
+      <p>
+        Your account data and voice messages remain stored while your account remains active.
+      </p>
+      <p>
+        When you unpair from your partner, shared voice messages stored on our servers
+        are removed as part of the unpairing process. Some information may remain in
+        backup systems or temporary technical logs for a limited period where required
+        for security, legal, or operational purposes. We make reasonable efforts to
+        remove eligible data as described in this Privacy Policy. Voice messages
+        temporarily stored on your own device remain under your control and may persist
+        until removed by the application, your device's cache management, or by
+        uninstalling the app.
+      </p>
+      <p>
+        Because Alongo uses anonymous authentication, uninstalling the app may create a new
+        anonymous account when you reinstall. Data associated with a previous anonymous account
+        may remain on our servers and may no longer be accessible to you.
+        To request deletion of data associated with a previous anonymous account,
+        please contact us at <a href="mailto:support@alongo.app">support@alongo.app</a>.
+      </p>
+      <p>
+        Some information may remain temporarily stored on your device to support offline
+        functionality and improve app performance. This locally cached data is managed by
+        your device and may be removed when the app cache is cleared or the app is uninstalled.
+      </p>
+    </section>
+
+    <!-- ── 4. Third-Party Services ─────────── -->
+    <section id="third-party">
+      <h2>4. Third-Party Services</h2>
+      <div class="third-party">
+        <p>We use Google Firebase for:</p>
+        <ul>
+          <li><strong>Firebase Authentication</strong> — Anonymous sign-in only</li>
+          <li><strong>Cloud Firestore</strong> — Data storage for account info, pair relationships, and voice messages</li>
+        </ul>
+        <p>
+          Firebase processes data according to
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+        </p>
+        <div class="not-used">
+          <p>At this time, Alongo does not use:</p>
+          <ul>
+            <li>Firebase Analytics</li>
+            <li>Firebase Cloud Messaging</li>
+            <li>Firebase Crashlytics</li>
+            <li>Advertising SDKs</li>
+            <li>Payment SDKs</li>
+          </ul>
+        </div>
+        <div class="notice-box">
+          <p>If we introduce analytics or other data processing services in the future,
+          this Privacy Policy will be updated accordingly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 5. Your Rights ──────────────────── -->
+    <section id="rights">
+      <h2>5. Your Rights</h2>
+      <ul>
+        <li>You may change your display name at any time</li>
+        <li>You may unpair from your partner. As part of the unpairing process, shared voice messages stored on our servers are removed.</li>
+        <li>You may request deletion of your account data by contacting <a href="mailto:support@alongo.app">support@alongo.app</a></li>
+        <li>You may deny or revoke any device permission at any time through your device settings</li>
+      </ul>
+    </section>
+
+    <!-- ── 6. Children's Privacy ───────────── -->
+    <section id="children">
+      <h2>6. Children's Privacy</h2>
+      <p>
+        Alongo is not intended for children under the age required by applicable law.
+        We do not knowingly collect personal information from children.
+        If we become aware that such information has been collected,
+        we will delete it as soon as reasonably practicable.
+      </p>
+    </section>
+
+    <!-- ── 7. Changes to This Policy ───────── -->
+    <section id="changes">
+      <h2>7. Changes to This Policy</h2>
+      <p>
+        We may update this privacy policy from time to time.
+        If we make significant changes, we will notify you through the app.
+        The "Last updated" date at the top of this page indicates when the policy was last revised.
+      </p>
+    </section>
+
+    <!-- ── 8. Security ─────────────────────── -->
+    <section id="security">
+      <h2>8. Security</h2>
+      <p>
+        We use industry-standard security measures to protect your information.
+        Data transmitted between your device and our servers is encrypted using HTTPS/TLS.
+        Access to user data is restricted to authorized systems required to operate the service.
+      </p>
+      <p>
+        No method of electronic storage or transmission over the Internet is completely secure.
+        While we strive to protect your personal information, we cannot guarantee its absolute security.
+      </p>
+    </section>
+
+    <!-- ── 9. International Transfers ──────── -->
+    <section id="international">
+      <h2>9. International Transfers</h2>
+      <p>
+        Your information may be processed and stored on servers located outside your country
+        of residence, including in the United States, where Google Firebase operates its infrastructure.
+        We take reasonable measures to protect your data during these transfers.
+      </p>
+    </section>
+
+    <!-- ── 10. Governing Law ──────────────── -->
+    <section id="governing-law">
+      <h2>10. Governing Law</h2>
+      <p>
+        This Privacy Policy is governed by applicable law.
+      </p>
+    </section>
+
+    <!-- ── 11. Contact ─────────────────────── -->
+    <section id="contact">
+      <div class="contact-card">
+        <h2>11. Contact Us</h2>
+        <p class="contact-label">Data Controller: Alongo</p>
+        <p>If you have questions about this privacy policy, please reach out to us at:</p>
+        <a href="mailto:support@alongo.app" class="contact-email">support@alongo.app</a>
+        <p class="contact-response">We will respond as soon as reasonably practicable.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════ Footer ══════════════ -->
+  <footer class="footer">
+    <p>&copy; 2026 Alongo. All rights reserved.</p>
+    <p>Questions? <a href="mailto:support@alongo.app">support@alongo.app</a></p>
+  </footer>
+
+</body>
+</html>
